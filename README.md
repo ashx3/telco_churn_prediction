@@ -49,7 +49,7 @@ __Increasing profit! But how can we achieve it? Some of the way to increase prof
 - Acquiring new customers as much as we can
 - Retaining existing customers as much as we can
 
-![types of customers](/images/customers_types.jpg)
+![types of customers](/images/customer_types.jpg)
 
 # Problems
 - Companies need to invest (expense costs) to get new customers
@@ -81,6 +81,6 @@ streamlit run app.py
 
 __This is how our Streamlit app looks:__
 
-![streamlitapp page1](/images/app1)
+![streamlitapp page1](/images/app1.jpg)
 
-![streamlitapp page2](/images/app2)
+![streamlitapp page2](/images/app2.jpg)
