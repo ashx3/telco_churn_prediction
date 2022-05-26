@@ -55,7 +55,7 @@ __Increasing profit! But how can we achieve it? Some of the way to increase prof
 - Acquiring new customers as much as we can
 - Retaining existing customers as much as we can
 
-<center>![types of customers](/images/customer_types.jpg)</center>
+![types of customers](/images/customer_types.jpg)
 
 # Problems arising in order to retain
 - Companies need to invest (expense costs) to get new customers
