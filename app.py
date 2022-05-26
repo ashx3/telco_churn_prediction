@@ -4,20 +4,21 @@ import pickle
 import warnings
 warnings.filterwarnings('ignore')
 
-data = pd.read_csv('D:/Portfolio/Churn/tel_churn.csv')
+data = pd.read_csv('/tel_churn.csv')
 
-
+# title and starters
 st.title('Telecom Churn Prediction App')
 
-name = st.text_input('Enter your name:', key='name')
+name = st.text_input('Enter your name:')
 
 st.subheader(f'Hi {name},')
 
-st.markdown(f'''The Telecom Churn Prediction App is used to detect whether a Customer will Churn or not Churn from his Telecom provider. 
+st.markdown(f'''The Telecom Churn Prediction App is used to detect whether a Customer will Churn or not Churn based on his behavior and features. 
             Here, the user has to select the relevant options below to generate results. The generated results are predicted by the 
             trained model with confidence levels, these predictions are made after training the model with the attributes and 
             characteristics of Churners & Non-Churners.''')
 
+# inputs
 gender = st.radio('Select your Gender:', ('Male', 'Female'))
 
 senior_citizen = st.radio('Are you a Senior Citizen?', ('No', 'Yes'))
@@ -62,7 +63,7 @@ payment_method = st.selectbox("What type of payment method do you use :",
 tenure_group = st.selectbox("How many months have you been using the services?", 
                          ['1 - 12', '13 - 24', '25 - 36', '37 - 48', '61 - 72', '49 - 60'], help = 'Tenure')
 
-
+# inputs and columns for prediction
 input = [[gender, senior_citizen, partner, dependents, phone_service, multiple_lines, internet_service, online_security,
             online_backup, device_protection, tech_support, streaming_tv, streaming_movies, contract, paperless_billing, 
             payment_method, monthly_charges, total_charges, tenure_group]]
@@ -73,8 +74,10 @@ cols = ['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'PhoneService',
        'Contract', 'PaperlessBilling', 'PaymentMethod', 'MonthlyCharges',
        'TotalCharges', 'tenure_group']
 
+# creating a dataframe for inputs
 predictor = pd.DataFrame(input, columns=cols)
 
+# func for encoding inputs and predicting the inputs
 def preprocess_predictor(data):
     # loading encoders
     with open('encoders\StandardScaler', 'rb') as f:
@@ -117,8 +120,7 @@ def preprocess_predictor(data):
 if(st.button('Predict')):
     preprocess_predictor(predictor)
 
-
-# remove main menu and footer note
+# remove main menu and footer note of streamlit
 hide_menu_style = '''
        <style>
        #MainMenu {visibility: hidden;}
