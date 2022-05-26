@@ -1,6 +1,6 @@
 ## Telecom Retention Using Data Science to address Customer Churn
 
-![churn poster](\images\churn_poster.jpg)
+![churn poster](/images/churn_poster.jpg)
 
 # Context
 The most common issue that any company faces is to retain their customers, be it gaming, food, banking or a telecom industry, the issue pertains to be the same. These companies invest in lump sum in order to retain their customers and it proves to be a challenging task.
@@ -15,7 +15,7 @@ KAGGLE - https://www.kaggle.com/datasets/blastchar/telco-customer-churn
 
 # Customer Churning can happen in many ways
 
-![different churn scenarios](\images\different_churn_scenarios.jpg)
+![different churn scenarios](/images/different_churn_scenarios.jpg)
 
 # Attribute Information
 
