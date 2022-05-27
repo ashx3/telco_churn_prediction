@@ -58,19 +58,19 @@ __Increasing profit! But how can we achieve it? Some of the way to increase prof
 ![types of customers](/images/customer_types.jpg)
 
 # Problems arising in order to retain
-- Companies need to invest (expense costs) to get new customers
-- When a customer leaves the service (churns), it indicates a loss of investment
-- Cost, time and effort need to be channelled to replace customers who have left the service
-- Acquiring new customers is often more difficult and more expensive than retaining customers
-- On Harvard Business Review page, they said __"acquiring a new customer is anywhere from 5 to 25 times more expensive than retaining an existing one"__. Below is a reference of the page for the same.
+- Companies need to invest (expense costs) to get new customers.
+- When a customer leaves the service (churns), it indicates a loss of investment.
+- Cost, time and effort need to be channelled to replace customers who have left the service.
+- Acquiring new customers is often more difficult and more expensive than retaining customers.
+- On Harvard Business Review page, they said __"Acquiring a new customer is anywhere from 5 to 25 times more expensive than retaining an existing one"__. Below is a reference of the page for the same.
 
 ![Harvard Business Review reference page](/images/harvard_business_review.jpg)
 
 # Objectives
-- Predict whether customers will continue to use the service or will leave the service
+- Predict whether customers will continue to use the service or will leave the service.
 - Understanding the customer behaviours:
-    - What keeps customers using the service
-    - What makes customers leave the service
+    - What keeps customers using the service.
+    - What makes customers leave the service.
 
 # Abstract
 Customer churn is definitely bad to a firm’s profitability. Various strategies can be implemented to eliminate customer churn. The best way to avoid customer churn is for a company to truly know its customers. This includes identifying customers who are at risk of churning and working to improve their satisfaction. Improving customer service is of course, at the top of the priority for tackling this issue. Building customer loyalty through relevant experiences and specialized service is another strategy to reduce customer churn. Some firms survey customers who have already churned to understand their reasons for leaving in order to adopt a proactive approach to avoiding future customer churn.
