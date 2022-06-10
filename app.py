@@ -4,7 +4,8 @@ import pickle
 import warnings
 warnings.filterwarnings('ignore')
 
-data = pd.read_csv('/tel_churn.csv')
+url = "https://raw.githubusercontent.com/ashx3/telco_churn_prediction/main/tel_churn.csv"
+data = pd.read_csv(url)
 
 # title and starters
 st.title('Telecom Churn Prediction App')
