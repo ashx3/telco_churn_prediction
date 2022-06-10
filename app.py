@@ -81,10 +81,10 @@ predictor = pd.DataFrame(input, columns=cols)
 # func for encoding inputs and predicting the inputs
 def preprocess_predictor(data):
     # loading encoders
-    with open('app\encoders\StandardScaler', 'rb') as f:
+    with open('app/encoders/StandardScaler', 'rb') as f:
         ss = pickle.load(f)
 
-    with open('app\encoders\One-Hot-Encoder', 'rb') as f:
+    with open('app/encoders/One-Hot-Encoder', 'rb') as f:
         ohe = pickle.load(f)
 
     # categorical columns
