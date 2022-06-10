@@ -105,7 +105,7 @@ def preprocess_predictor(data):
 
     data_final = pd.concat([data.drop(columns=cat_cols), data_ohe_df], axis=1)
 
-    with open('model1.sav', 'rb') as f:
+    with open('model.sav', 'rb') as f:
         model = pickle.load(f)
 
     single = model.predict(data_final)
