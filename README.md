@@ -17,6 +17,31 @@ KAGGLE - https://www.kaggle.com/datasets/blastchar/telco-customer-churn
 
 ![different churn scenarios](/images/different_churn_scenarios.jpg)
 
+# Abstract
+Customer churn is definitely bad to a firm’s profitability. Various strategies can be implemented to eliminate customer churn. The best way to avoid customer churn is for a company to truly know its customers. This includes identifying customers who are at risk of churning and working to improve their satisfaction. Improving customer service is of course, at the top of the priority for tackling this issue. Building customer loyalty through relevant experiences and specialized service is another strategy to reduce customer churn. Some firms survey customers who have already churned to understand their reasons for leaving in order to adopt a proactive approach to avoiding future customer churn.
+
+# Company Goals
+__Increasing profit! But how can we achieve it? Some of the way to increase profit are:__
+- Acquiring new customers as much as we can
+- Retaining existing customers as much as we can
+
+![types of customers](/images/customer_types.jpg)
+
+# Problems arising in order to retain
+- Companies need to invest (expense costs) to get new customers.
+- When a customer leaves the service (churns), it indicates a loss of investment.
+- Cost, time and effort need to be channelled to replace customers who have left the service.
+- Acquiring new customers is often more difficult and more expensive than retaining customers.
+- On Harvard Business Review page, they said __"Acquiring a new customer is anywhere from 5 to 25 times more expensive than retaining an existing one"__. Below is a reference of the page for the same.
+
+![Harvard Business Review reference page](/images/harvard_business_review.jpg)
+
+# Objectives
+- Predict whether customers will continue to use the service or will leave the service.
+- Understanding the customer behaviours:
+    - What keeps customers using the service.
+    - What makes customers leave the service.
+
 # Attribute Information
 
 ## Identifier
@@ -50,42 +75,18 @@ KAGGLE - https://www.kaggle.com/datasets/blastchar/telco-customer-churn
 - StreamingTV - Whether the customer has streaming TV or not
 - StreamingMovies - Whether the customer has streaming movies or not
 
-# Company Goals
-__Increasing profit! But how can we achieve it? Some of the way to increase profit are:__
-- Acquiring new customers as much as we can
-- Retaining existing customers as much as we can
-
-![types of customers](/images/customer_types.jpg)
-
-# Problems arising in order to retain
-- Companies need to invest (expense costs) to get new customers.
-- When a customer leaves the service (churns), it indicates a loss of investment.
-- Cost, time and effort need to be channelled to replace customers who have left the service.
-- Acquiring new customers is often more difficult and more expensive than retaining customers.
-- On Harvard Business Review page, they said __"Acquiring a new customer is anywhere from 5 to 25 times more expensive than retaining an existing one"__. Below is a reference of the page for the same.
-
-![Harvard Business Review reference page](/images/harvard_business_review.jpg)
-
-# Objectives
-- Predict whether customers will continue to use the service or will leave the service.
-- Understanding the customer behaviours:
-    - What keeps customers using the service.
-    - What makes customers leave the service.
-
-# Abstract
-Customer churn is definitely bad to a firm’s profitability. Various strategies can be implemented to eliminate customer churn. The best way to avoid customer churn is for a company to truly know its customers. This includes identifying customers who are at risk of churning and working to improve their satisfaction. Improving customer service is of course, at the top of the priority for tackling this issue. Building customer loyalty through relevant experiences and specialized service is another strategy to reduce customer churn. Some firms survey customers who have already churned to understand their reasons for leaving in order to adopt a proactive approach to avoiding future customer churn.
-
 # Helper
-In this repository, we have performed the end to end Exploratory Data Analysis and identified the characteristics of the customers that are more likely to churn and trained a model, and lately we have deployed the model using streamlit.
+In this repository, we have performed the end to end Exploratory Data Analysis and identified the characteristics of the customers that are more likely to churn and trained a model. Later on, we have created a web application using streamlit API that takes all the necessary inputs from the user & shows the output. Then deployed project on the Heroku Platform.
 
 ### 🟢 For EDA, please refer to : Telco_Churn_Analysis_EDA.ipynb
 ### 🟢 For Model Building, please refer to : Telco_Churn_Analysis_Model Building.ipynb
-### 🟢 For Model Deployment, please refer to : app.py
+### 🟢 For Model Deployment, please enter this link : 
 
-# How to start streamlit?
+# How to start and use streamlit?
 
-Simply run the below command on the terminal and let it do the magic
+Simply run the following commands on command line and let it do the magic
 ```
+pip3 install -r requirements.txt
 streamlit run app.py
 ```
 
