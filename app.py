@@ -53,9 +53,9 @@ contract = st.selectbox("What type of Contract Term are you subscribed?",
  
 st.success(f"Contract Type - {contract}")
 
-monthly_charges = st.slider('Monthly Charges (USD)', max(data["MonthlyCharges"]), min(data['MonthlyCharges']))
+monthly_charges = st.slider('Monthly Charges (USD)', min(data['MonthlyCharges']), max(data["MonthlyCharges"]))
 
-total_charges = st.slider('Total Charges (USD)', max(data["TotalCharges"]), min(data['TotalCharges']))
+total_charges = st.slider('Total Charges (USD)', min(data['TotalCharges']), max(data["TotalCharges"]))
 
 payment_method = st.selectbox("What type of payment method do you use :",
                          ['Electronic check', 'Mailed check', 'Bank transfer (automatic)',

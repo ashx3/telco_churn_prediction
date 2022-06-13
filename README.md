@@ -76,7 +76,7 @@ __Increasing profit! But how can we achieve it? Some of the way to increase prof
 - StreamingMovies - Whether the customer has streaming movies or not
 
 # Helper
-In this repository, we have performed the end to end Exploratory Data Analysis and identified the characteristics of the customers that are more likely to churn and trained a model. Later on, we have created a web application using streamlit API that takes all the necessary inputs from the user & shows the output. Then deployed project on the Heroku Platform.
+In this repository, we have performed the end to end Exploratory Data Analysis and identified the characteristics of the customers that are more likely to churn, trained the model using different classifiers, and then picking the model with good accuracy and performing hyperparameter tuning to further boost accuracy. Later on, we have created a web application using streamlit API that takes all the necessary inputs from the user & shows the output. And then deploying the project on the Heroku Platform.
 
 ### 🟢 For EDA, please refer to : Telco_Churn_Analysis_EDA.ipynb
 ### 🟢 For Model Building, please refer to : Telco_Churn_Analysis_Model Building.ipynb
