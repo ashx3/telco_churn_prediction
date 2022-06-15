@@ -75,6 +75,40 @@ __Increasing profit! But how can we achieve it? Some of the way to increase prof
 - StreamingTV - Whether the customer has streaming TV or not
 - StreamingMovies - Whether the customer has streaming movies or not
 
+## Tasks Performed
+##### 1. Data exploration: 
+Exploring the dataset using pandas, numpy, matplotlib and seaborn libraries.
+
+##### 2. Exploratory Data Analysis : 
+Plotted different graphs to get more insights about dependent and independent features.
+
+##### 3. Feature Engineering : 
+There are numerical and categorical features are present. Scaling was performed on numerical data and encoding of categorical data is done.
+
+##### 4. Model Building : 
+For model building, data was splitted into training and testing set and various algorithms were used to train the model, namely:<br>
+- Logistic Regression
+- Ridge Classifier
+- Decision Tree Classifier
+- Random Forest Classifier
+- KNN
+- SVC
+- Neural Network
+- Gradient Boosing Classifier
+- Adaboost Classifier
+- CatBoost Classifier
+- XGBoost
+- LightGBM
+
+##### 5. Model Selection : 
+Trained all the models but as the dataset was imbalanced, evaluation metrics such as accuracy score were not used. So Oversampling techniques were performed and trained all the models then after. The best performing model turned out to be CatBoostClassifier.
+
+##### 6. HyperParameter Tuning :
+After picking out the best model using the evaluation metrics, HyperParameter Tuning was performed using GridSearchCV which is an exhaustive method but gives better results as it runs as a whole. After finding out the best parameters, PCA was performed, but the results were not promising, so it was not used in the model.
+
+##### 7. Web Application & Deployment : 
+Created a web application using streamlit API that takes all the necessary inputs from the user & shows the output. Then deployed project on the Heroku Platform.
+
 # Helper
 In this repository, we have performed the end to end Exploratory Data Analysis and identified the characteristics of the customers that are more likely to churn, trained the model using different classifiers, and then picking the model with good accuracy and performing hyperparameter tuning to further boost accuracy. Later on, we have created a web application using streamlit API that takes all the necessary inputs from the user & shows the output. And then deploying the project on the Heroku Platform.
 

@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import numpy as np
 import pickle
 import warnings
 warnings.filterwarnings('ignore')
@@ -9,6 +10,8 @@ data = pd.read_csv(url)
 
 # title and starters
 st.title('Telecom Churn Prediction App')
+
+st.write('---')
 
 name = st.text_input('Enter your name:')
 
@@ -115,8 +118,9 @@ def preprocess_predictor(data):
         st.error("The customer is likely to be Churn!!")
         st.warning("Confidence = {}".format(probability[:,1] * 100) + '%')
     else:
-        st.success("The customer is likely to continue!!")
-        st.warning("Confidence = {}".format(probability[:, 0] * 100) + '%')
+        st.success("The customer is likely to continue !!")
+        st.warning("The Confidence level is about {}".format(*probability[:, 0] * 100) + '%')
+        st.write('---')
 
 if(st.button('Predict')):
     preprocess_predictor(predictor)
