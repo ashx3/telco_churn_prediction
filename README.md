@@ -114,7 +114,7 @@ In this repository, we have performed the end to end Exploratory Data Analysis a
 
 ### 🟢 For EDA, please refer to : Telco_Churn_Analysis_EDA.ipynb
 ### 🟢 For Model Building, please refer to : Telco_Churn_Analysis_Model Building.ipynb
-### 🟢 For Model Deployment, please enter this link : https://telco-churn-prediction--app.herokuapp.com/
+### 🟢 For Model Deployment, please enter this link : https://ashx3-telco-churn-prediction-app-epcqad.streamlit.app/
 
 # How to start and use streamlit?
 
