@@ -28,11 +28,11 @@ __Increasing profit! But how can we achieve it? Some of the way to increase prof
 ![types of customers](/images/customer_types.jpg)
 
 # Problems arising in order to retain
-- Companies need to invest (expense costs) to get new customers.
-- When a customer leaves the service (churns), it indicates a loss of investment.
-- Cost, time and effort need to be channelled to replace customers who have left the service.
-- Acquiring new customers is often more difficult and more expensive than retaining customers.
-- On Harvard Business Review page, they said __"Acquiring a new customer is anywhere from 5 to 25 times more expensive than retaining an existing one"__. Below is a reference of the page for the same.
+- Companies need to invest (expense costs) to get new customers
+- When a customer leaves the service (churns), it indicates a loss of investment
+- Cost, time and effort need to be channelled to replace customers who have left the service
+- Acquiring new customers is often more difficult and more expensive than retaining customers
+- On Harvard Business Review page, they said __"Acquiring a new customer is anywhere from 5 to 25 times more expensive than retaining an existing one"
 
 ![Harvard Business Review reference page](/images/harvard_business_review.jpg)
 
@@ -76,16 +76,16 @@ __Increasing profit! But how can we achieve it? Some of the way to increase prof
 - StreamingMovies - Whether the customer has streaming movies or not
 
 ## Tasks Performed
-##### 1. Data exploration: 
+### 1. Data exploration: 
 Exploring the dataset using pandas, numpy, matplotlib and seaborn libraries.
 
-##### 2. Exploratory Data Analysis : 
+#### 2. Exploratory Data Analysis : 
 Plotted different graphs to get more insights about dependent and independent features.
 
-##### 3. Feature Engineering : 
+### 3. Feature Engineering : 
 There are numerical and categorical features are present. Scaling was performed on numerical data and encoding of categorical data is done.
 
-##### 4. Model Building : 
+### 4. Model Building : 
 For model building, data was splitted into training and testing set and various algorithms were used to train the model, namely:<br>
 - Logistic Regression
 - Ridge Classifier
@@ -100,13 +100,13 @@ For model building, data was splitted into training and testing set and various 
 - XGBoost
 - LightGBM
 
-##### 5. Model Selection : 
+### 5. Model Selection : 
 Trained all the models but as the dataset was imbalanced, evaluation metrics such as accuracy score were not used. So Oversampling techniques were performed and trained all the models then after. The best performing model turned out to be CatBoostClassifier.
 
-##### 6. HyperParameter Tuning :
+### 6. HyperParameter Tuning :
 After picking out the best model using the evaluation metrics, HyperParameter Tuning was performed using GridSearchCV which is an exhaustive method but gives better results as it runs as a whole. After finding out the best parameters, PCA was performed, but the results were not promising, so it was not used in the model.
 
-##### 7. Web Application & Deployment : 
+### 7. Web Application & Deployment : 
 Created a web application using streamlit API that takes all the necessary inputs from the user & shows the output. Then deployed project on the Heroku Platform.
 
 # Helper
