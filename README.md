@@ -17,9 +17,6 @@ KAGGLE - https://www.kaggle.com/datasets/blastchar/telco-customer-churn
 
 ![different churn scenarios](/images/different_churn_scenarios.jpg)
 
-# Abstract
-Customer churn is definitely bad to a firm’s profitability. Various strategies can be implemented to eliminate customer churn. The best way to avoid customer churn is for a company to truly know its customers. This includes identifying customers who are at risk of churning and working to improve their satisfaction. Improving customer service is of course, at the top of the priority for tackling this issue. Building customer loyalty through relevant experiences and specialized service is another strategy to reduce customer churn. Some firms survey customers who have already churned to understand their reasons for leaving in order to adopt a proactive approach to avoiding future customer churn.
-
 # Company Goals
 __Increasing profit! But how can we achieve it? Some of the way to increase profit are:__
 - Acquiring new customers as much as we can
@@ -37,10 +34,10 @@ __Increasing profit! But how can we achieve it? Some of the way to increase prof
 ![Harvard Business Review reference page](/images/harvard_business_review.jpg)
 
 # Objectives
-- Predict whether customers will continue to use the service or will leave the service.
+- Predict whether customers will continue to use the service or will leave the service
 - Understanding the customer behaviours:
-    - What keeps customers using the service.
-    - What makes customers leave the service.
+    - What keeps customers using the service
+    - What makes customers leave the service
 
 # Attribute Information
 
@@ -108,6 +105,9 @@ After picking out the best model using the evaluation metrics, HyperParameter Tu
 
 ### 7. Web Application & Deployment : 
 Created a web application using streamlit API that takes all the necessary inputs from the user & shows the output. Then deployed project on the Heroku Platform.
+
+# Abstract
+Customer churn is definitely bad to a firm’s profitability. Various strategies can be implemented to eliminate customer churn. The best way to avoid customer churn is for a company to truly know its customers. This includes identifying customers who are at risk of churning and working to improve their satisfaction. Improving customer service is of course, at the top of the priority for tackling this issue. Building customer loyalty through relevant experiences and specialized service is another strategy to reduce customer churn. Some firms survey customers who have already churned to understand their reasons for leaving in order to adopt a proactive approach to avoiding future customer churn.
 
 # Helper
 In this repository, we have performed the end to end Exploratory Data Analysis and identified the characteristics of the customers that are more likely to churn, trained the model using different classifiers, and then picking the model with good accuracy and performing hyperparameter tuning to further boost accuracy. Later on, we have created a web application using streamlit API that takes all the necessary inputs from the user & shows the output. And then deploying the project on the Heroku Platform.
