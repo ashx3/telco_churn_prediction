@@ -79,7 +79,7 @@ __Increasing profit! But how can we achieve it? Some of the way to increase prof
 ### 1. Data exploration: 
 Exploring the dataset using pandas, numpy, matplotlib and seaborn libraries.
 
-#### 2. Exploratory Data Analysis : 
+### 2. Exploratory Data Analysis : 
 Plotted different graphs to get more insights about dependent and independent features.
 
 ### 3. Feature Engineering : 
