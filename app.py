@@ -9,6 +9,11 @@ url = "https://raw.githubusercontent.com/ashx3/telco_churn_prediction/main/tel_c
 data = pd.read_csv(url)
 
 # title and starters
+
+st.set_page_config(page_title = 'Telecom Churn Prediction App', page_icon = '☎️', layout = 'wide')
+
+st.markdown("<h1 style='text-align: center; color: white;'>Telecom Churn Prediction App</h1>", unsafe_allow_html=True)
+
 st.title('Telecom Churn Prediction App')
 
 st.write('---')
