@@ -122,7 +122,7 @@ def preprocess_predictor(data):
         st.warning("Confidence = {}".format(probability[:,1] * 100) + '%')
     else:
         st.success("The customer is likely to continue !!")
-        st.warning("The Confidence level is about {}".format(*probability[:, 0] * 100) + '%')
+        st.warning("The Confidence level is about {:.2f}%".format(*probability[:, 0] * 100))
         st.write('---')
 
 if(st.button('Predict')):
