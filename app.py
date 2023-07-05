@@ -14,16 +14,14 @@ st.set_page_config(page_title = 'Telecom Churn Prediction App', page_icon = '☎
 
 st.markdown("<h1 style='text-align: center; color: white;'>Telecom Churn Prediction App</h1>", unsafe_allow_html=True)
 
-st.title('Telecom Churn Prediction App')
-
 st.write('---')
 
 name = st.text_input('Enter your name:')
 
-st.subheader(f'Hi {name},')
+st.subheader(f'Hi {name}')
 
-st.markdown(f'''The Telecom Churn Prediction App is used to detect whether a Customer will Churn or not Churn based on his behavior and features. 
-            Here, the user has to select the relevant options below to generate results. The generated results are predicted by the 
+st.markdown(f'''The Telecom Churn Prediction App is used to detect whether a Customer will Churn or not Churn based on their behavior. 
+            The user has to select the relevant options below to generate results. The generated results are predicted by the 
             trained model with confidence levels, these predictions are made after training the model with the attributes and 
             characteristics of Churners & Non-Churners.''')
 
