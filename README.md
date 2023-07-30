@@ -3,12 +3,12 @@
 ![churn poster](/images/churn_poster.jpg)
 
 # Context
-The most common issue that any company faces is to retain their customers, be it gaming, food, banking or a telecom industry, the issue pertains to be the same. These companies invest in lump sum in order to retain their customers and it proves to be a challenging task.
+The most common issue that any company faces is to retain their customers, be it gaming, food, banking or a telecom industry, the issue pertains to be the same. These companies invest in lump sum in order to retain their customers and it proves to be a challenging task. The primary goal is to develop a model that can predict customer churn, i.e. identify customers who are likely to stop using the company's services. By predicting customer churn in advance, companies can take proactive measures to retain their valuable customers and reduce attrition rates.
 
 ![customer churn](/images/customer_churn.jpg)
 
 # Content
-Here we will analyzing the customer retention use case which will include all the customer behaviour and attributes that will be useful in identifying the characteristics of the churners. Such characteristics or insights will help in building a good model.
+In this project, we will analyze the customer retention use case, focusing on customer behavior and attributes. Our objective is to identify the characteristics of churners, which will be instrumental in building an effective model. By gaining insights into these characteristics, we aim to create a robust model that can predict and improve customer retention rates.
 
 ### Data Source
 KAGGLE - https://www.kaggle.com/datasets/blastchar/telco-customer-churn
@@ -25,19 +25,31 @@ __Increasing profit! But how can we achieve it? Some of the way to increase prof
 ![types of customers](/images/customer_types.jpg)
 
 # Problems arising in order to retain
-- Companies need to invest (expense costs) to get new customers
-- When a customer leaves the service (churns), it indicates a loss of investment
-- Cost, time and effort need to be channelled to replace customers who have left the service
-- Acquiring new customers is often more difficult and more expensive than retaining customers
-- On Harvard Business Review page, they said __"Acquiring a new customer is anywhere from 5 to 25 times more expensive than retaining an existing one"
+- __Investment Costs:__ <br>
+Companies have to invest significant resources and expenses to acquire new customers, making it crucial to retain existing ones to maximize return on investment.
+
+- __Loss of Investment:__ <br>
+When a customer leaves the service (churns), it signifies a loss of the investment made in acquiring that customer. Retaining customers becomes essential to avoid such losses.
+
+- __Replacement Efforts:__ <br>
+Losing customers requires redirecting cost, time, and effort to replace them, which can be resource-intensive and impact overall efficiency.
+
+- __Acquisition vs. Retention:__ <br>
+Acquiring new customers is not only difficult but also more expensive compared to retaining existing customers. Hence, a strong focus on customer retention is vital for sustainable growth and profitability.
+
+- On Harvard Business Review page, they said __"Acquiring a new customer is anywhere from 5 to 25 times more expensive than retaining an existing one"__
 
 ![Harvard Business Review reference page](/images/harvard_business_review.jpg)
 
 # Objectives
-- Predict whether customers will continue to use the service or will leave the service
-- Understanding the customer behaviours:
-    - What keeps customers using the service
-    - What makes customers leave the service
+- __Predictive Modeling:__<br>
+Develop a predictive model to forecast whether customers are likely to continue using the service or churn.
+
+- __Understanding Customer Behaviors:__ <br>
+Gain insights into customer behaviors by analyzing patterns and factors that influence customer retention and churn.
+
+- __Retention Strategies:__ <br>
+Use the model to identify key factors that contribute to customer retention and design effective retention strategies to reduce churn rates.
 
 # Attribute Information
 
@@ -74,16 +86,16 @@ __Increasing profit! But how can we achieve it? Some of the way to increase prof
 
 ## Tasks Performed
 ### 1. Data exploration: 
-Exploring the dataset using pandas, numpy, matplotlib and seaborn libraries.
+Explored the dataset using pandas, numpy, matplotlib, and seaborn libraries to understand its structure and contents.
 
 ### 2. Exploratory Data Analysis : 
-Plotted different graphs to get more insights about dependent and independent features.
+Visualized data through various graphs to gain insights into the relationships between dependent and independent features.
 
 ### 3. Feature Engineering : 
-There are numerical and categorical features are present. Scaling was performed on numerical data and encoding of categorical data is done.
+Performed feature engineering to handle numerical and categorical features. Scaled numerical data and encoded categorical data for model compatibility.
 
 ### 4. Model Building : 
-For model building, data was splitted into training and testing set and various algorithms were used to train the model, namely:<br>
+Split the data into training and testing sets and trained various algorithms for predictive model, including::<br>
 - Logistic Regression
 - Ridge Classifier
 - Decision Tree Classifier
@@ -98,22 +110,22 @@ For model building, data was splitted into training and testing set and various 
 - LightGBM
 
 ### 5. Model Selection : 
-Trained all the models but as the dataset was imbalanced, evaluation metrics such as accuracy score were not used. So Oversampling techniques were performed and trained all the models then after. The best performing model turned out to be CatBoostClassifier.
+Due to dataset imbalance, evaluation metrics like accuracy were not reliable. Oversampling techniques were applied to balance the dataset and retrained the models. The CatBoostClassifier performed the best.
 
 ### 6. HyperParameter Tuning :
-After picking out the best model using the evaluation metrics, HyperParameter Tuning was performed using GridSearchCV which is an exhaustive method but gives better results as it runs as a whole. After finding out the best parameters, PCA was performed, but the results were not promising, so it was not used in the model.
+After selecting the best model based on evaluation metrics, GridSearchCV was utilized for Hyperparameter Tuning, providing better results as it comprehensively searches for optimal parameters.
 
 ### 7. Web Application & Deployment : 
-Created a web application using streamlit API that takes all the necessary inputs from the user & shows the output. Then deployed project on the Heroku Platform.
+Developed a web application using Streamlit API to take user inputs and display the corresponding outputs.
 
 # Conclusion
-Customer churn is definitely bad to a firm’s profitability. Various strategies can be implemented to eliminate customer churn. The best way to avoid customer churn is for a company to truly know its customers. This includes identifying customers who are at risk of churning and working to improve their satisfaction. Improving customer service is of course, at the top of the priority for tackling this issue. Building customer loyalty through relevant experiences and specialized service is another strategy to reduce customer churn. Some firms survey customers who have already churned to understand their reasons for leaving in order to adopt a proactive approach to avoiding future customer churn.
+Customer churn is a significant threat to a company's profitability. To mitigate it, firms can implement various strategies such as understanding their customers better, identifying at-risk customers, and enhancing customer satisfaction. Improving customer service and providing personalized experiences can build loyalty and reduce churn. Additionally, conducting surveys with churned customers helps gather insights to proactively address future churn.
 
 # Helper
-In this repository, we have performed the end to end Exploratory Data Analysis and identified the characteristics of the customers that are more likely to churn, trained the model using different classifiers, and then picking the model with good accuracy and performing hyperparameter tuning to further boost accuracy. Later on, we have created a web application using streamlit API that takes all the necessary inputs from the user & shows the output. And then deploying the project on the Heroku Platform.
+This project consists of three main components (jupyter notebooks):
 
-### 🟢 For EDA, please refer to : Telco_Churn_Analysis_EDA.ipynb
-### 🟢 For Model Building, please refer to : Telco_Churn_Analysis_Model Building.ipynb
+### 🟢 For EDA, please refer to : telco_Churn_Analysis_EDA.ipynb
+### 🟢 For Model Building, please refer to : telco_Churn_Analysis_Model Building.ipynb
 ### 🟢 For Model Deployment, please enter this link : https://ashx3-insurance-premium-prediction.streamlit.app/
 
 # How to start and use streamlit?
