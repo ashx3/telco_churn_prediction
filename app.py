@@ -20,10 +20,10 @@ name = st.text_input('Enter your name:')
 
 st.subheader(f'Hi {name}')
 
-st.markdown(f'''The Telecom Churn Prediction App is used to detect whether a Customer will Churn or not Churn based on their behavior. 
-            The user has to select the relevant options below to generate results. The generated results are predicted by the 
-            trained model with confidence levels, these predictions are made after training the model with the attributes and 
-            characteristics of Churners & Non-Churners.''')
+st.markdown(f'''The Telecom Churn Prediction App is designed to forecast whether a customer will churn or not,
+             based on their behavior. Users input relevant options to generate results. These outcomes are derived
+             from a trained model that delivers predictions along with associated confidence levels. These predictions
+             are the outcome of training the model using attributes and characteristics of both churners and non-churners.''')
 
 # inputs
 gender = st.radio('Select your Gender:', ('Male', 'Female'))
